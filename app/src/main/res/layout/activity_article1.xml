@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/background"
+    android:background="@drawable/group_24__4_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Article1">
+
+        <TextView
+            android:id="@+id/pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#000000"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            android:text="Pink"
+            android:textColor="#F8E4E4"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginStart="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:shadowColor="#000000"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            android:text="Cloud"
+            android:textColor="#6E6E6E"
+            android:textSize="50sp"
+            app:layout_constraintStart_toEndOf="@+id/pink"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="447dp"
+            android:layout_height="640dp"
+            android:layout_marginTop="280dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="30dp"
+                    android:text="Есть ли польза в депрессии?"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="8"
+                    android:textColor="@color/white"
+                    android:textSize="25dp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:fontFamily="@font/montserrat"
+                    android:shadowColor="#000000"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:textColor="@color/white"
+                    android:text="  Большую часть истории человечество считало, что повышенная температура — это и есть болезнь. Пока 300 лет назад немецкий химик Георг Шталь не догадался, что на самом деле это попытка организма исцелиться. Примерно так же может обстоять дело и с некоторыми ментальными состояниями, которые сейчас считаются «нарушениями» или «расстройствами», пишет автор книги Madness: A Philosophical Exploration профессор философии Джастин Гарсонис.
+\n\n  Что, если на самом деле они являются не дисфункциями, а особыми функциями нашей психики? Эта идея лежит в основе набирающего популярность научного подхода — эволюционной психиатрии. Подробно ее принципы изложены в опубликованной еще в 1994 году книге «Почему мы заболеваем: новая наука дарвиновской медицины» врача Рэндольфа Несса и эволюционного биолога Джорджа К. Уильямса. Если кратко: психические «расстройства» могут быть на самом деле целенаправленными реакциями или стратегиями, выработанными в результате естественного отбора из-за преимуществ, которое они давали нашим предкам. Как повышение температуры в ответ на проникновение инфекции.
+\n\n  Функции у них могут быть разными. Защитными, как в случае реактивного психоза, когда психика закрывается от внешнего мира, чтобы не «сломаться» от сильного потрясения. Или компенсирующими, как в случае одержимости конспирологическими теориями, которые часто восполняют недостаток смысла в жизни. Но какая функция может быть у депрессии с ее подавленностью, чувством беспомощности и вины, нарушениями сна и суицидальными мыслями? Возможно, сигнальная — как у боли.
+\n\n  Депрессия может быть «попыткой психики показать, что прежние подходы к жизни не работают и нам надо что-то менять», пишет Гарсонис. Это не означает, что от депрессии не нужно лечиться, в том числе медикаментами. Часто без них не обойтись — как и без парацетамола, когда нужно сбить слишком высокую температуру. Но главное — изменение отношения к депрессии может изменить к лучшему прогноз лечения и самоощущение тех, кто от нее страдает.
+\n\n  Если вы понимаете, что ваши симптомы — это не бессмысленная поломка, а осмысленный сигнал, который нужно расшифровать, у вас появляется надежда на выход из ментального тупика. Гарсонис ссылается на эксперименты психиатра Ханса Шродера, который знакомил своих пациентов с этой идеей и отмечал: одно осознание того, что депрессия пытается «сказать им что-то важное», впервые за долгое время приносило многим облегчение.">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

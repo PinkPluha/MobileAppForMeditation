@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/ava"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ava"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Dip"
+        tools:targetApi="31">
+        <activity
+            android:name=".Diary.EditDiaryEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Diary.DiaryEntryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Diary.DiaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityWithQuestionAndOptions"
+            android:exported="false" />
+        <activity
+            android:name=".EmotionSelectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Article1"
+            android:exported="false" />
+        <activity
+            android:name=".Articles1"
+            android:exported="false" />
+        <activity
+            android:name=".Articles"
+            android:exported="false" />
+        <activity
+            android:name=".Dixatelnie_praktiki"
+            android:exported="false" />
+        <activity
+            android:name=".forTests.Test1"
+            android:exported="false" />
+        <activity
+            android:name=".Tests"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".BeginPage"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".FirstPage"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

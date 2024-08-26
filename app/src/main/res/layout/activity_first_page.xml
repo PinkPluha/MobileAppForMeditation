@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/group_11"
+    tools:context=".FirstPage">
+
+
+        <TextView
+            android:id="@+id/pink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_medium"
+            android:shadowColor="#000000"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            android:text="Pink"
+            android:textColor="#F8E4E4"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_marginStart="82dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cloud"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:shadowColor="#000000"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:shadowRadius="9"
+            android:text="Cloud"
+            android:textColor="#9477BC"
+            android:textSize="50sp"
+            app:layout_constraintStart_toEndOf="@+id/pink"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/firstPageImage"
+            android:layout_width="447dp"
+            android:layout_height="280dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="650dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstPageImage">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/category"
+                                    android:layout_width="308dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/montserrat_bold"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="8"
+                                    android:text="Различные способы управления стрессом"
+                                    android:textColor="@color/white"
+                                    android:textSize="25dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/firstPageImage" />
+
+                                <TextView
+                                    android:id="@+id/textView17"
+                                    android:layout_width="401dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Погругись в безмолвие, обрети ясность ума и глубину чувств, открывая новые грани своего Я"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/category"
+                                    app:layout_constraintTop_toBottomOf="@+id/category" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="10dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/cool" />
+
+                                <ImageView
+                                    android:id="@+id/imageView7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/ega__1_" />
+
+                                <TextView
+                                    android:id="@+id/textView1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Дыхательные практики"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView6"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView6">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Медитации"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView7"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView7">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="191dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Расслабление и обретение внутренней гармонии. "
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintStart_toStartOf="@+id/textView1"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView1">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="191dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Снижение стресса и повышение осознанности."
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                                    app:layout_constraintStart_toStartOf="@+id/textView3"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                                </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="20dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/music__1_" />
+
+                                <ImageView
+                                    android:id="@+id/imageView9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/gipnoz" />
+
+                                <TextView
+                                    android:id="@+id/textView22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Аудио релаксации"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView8"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView8">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Релаксация гипнозом"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView9"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView9">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Улучшение сна и достижение глубокого состояния покоя."
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintStart_toStartOf="@+id/textView22"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView22">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="191dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Работа с подсознанием и внутренним Я."
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView23"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+                                </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/imageView10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="15dp"
+                                    android:layout_marginTop="20dp"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/klass" />
+
+                                <ImageView
+                                    android:id="@+id/imageView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:layout_marginEnd="15dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent"
+                                    app:srcCompat="@drawable/sport" />
+
+                                <TextView
+                                    android:id="@+id/textView11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Визуализация"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView10"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView10">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Йога"
+                                    android:textColor="@color/white"
+                                    app:layout_constraintStart_toStartOf="@+id/imageView11"
+                                    app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+                                </TextView>
+
+                                <TextView
+                                    android:id="@+id/textView24"
+                                    android:layout_width="200dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Яркие представления для снятия тревожности."
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintStart_toStartOf="@+id/textView11"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+                                </TextView>
+
+                                <TextView
+                                    android:layout_width="191dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat_medium"
+                                    android:shadowColor="#000000"
+                                    android:shadowDx="2"
+                                    android:shadowDy="2"
+                                    android:shadowRadius="2"
+                                    android:text="Улучшение здоровья тела и спокойствие ума."
+                                    android:textColor="@color/white"
+                                    android:textStyle="italic"
+                                    app:layout_constraintBottom_toBottomOf="@+id/textView24"
+                                    app:layout_constraintStart_toStartOf="@+id/textView12"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+                                </TextView>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+
+
+        </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

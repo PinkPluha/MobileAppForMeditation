@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "542523584111",
+    "firebase_url": "https://pink-cloud-cd144-default-rtdb.firebaseio.com",
+    "project_id": "pink-cloud-cd144",
+    "storage_bucket": "pink-cloud-cd144.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:542523584111:android:ca0cc5923691a8be8ee79a",
+        "android_client_info": {
+          "package_name": "com.example.dip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKbZq8r9PTbhg9_NejIWPCgC7xDdfdrxc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

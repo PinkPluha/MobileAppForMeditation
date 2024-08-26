@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/alfa_slab_one</item>
+        <item>@font/montserrat</item>
+        <item>@font/montserrat_bold</item>
+        <item>@font/montserrat_extrabold</item>
+        <item>@font/montserrat_extralight_italic</item>
+        <item>@font/montserrat_light</item>
+        <item>@font/montserrat_light_italic</item>
+        <item>@font/montserrat_medium</item>
+        <item>@font/montserrat_thin</item>
+        <item>@font/ubuntu_light</item>
+        <item>@font/ubuntu_medium</item>
+        <item>@font/yesteryear</item>
+        <item>@font/zilla_slab_medium</item>
+    </array>
+</resources>

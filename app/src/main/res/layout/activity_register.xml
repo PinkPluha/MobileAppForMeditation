@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sky"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/register_titl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lotus_686963" />
+
+
+    <TextView
+        android:id="@+id/register_titl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="9"
+        android:text="Создайте аккаунт"
+        android:textAlignment="center"
+        android:textColor="#F7E3E3"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/register_pismo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="6dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pismo2"
+        app:srcCompat="@drawable/email_3894024" />
+
+    <ImageView
+        android:id="@+id/register_chelovek"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_chelovek2"
+        app:srcCompat="@drawable/padlock_7339419"/>
+
+    <ImageView
+        android:id="@+id/register_zamochek"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_chelovek"
+        app:srcCompat="@drawable/padlock_7339419" />
+
+    <EditText
+        android:id="@+id/register_phone"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="48dp"
+        android:hint="Номер телефона"
+        android:inputType="phone"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/register_titl"
+        app:layout_constraintStart_toEndOf="@+id/register_pismo2"
+        android:fontFamily="@font/ubuntu_light" />
+
+    <ImageView
+        android:id="@+id/register_pismo2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_titl"
+        app:srcCompat="@drawable/smartphone_7344131" />
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:inputType="textEmailAddress"
+        android:hint="Электронная почта"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/register_pismo"
+        app:layout_constraintTop_toBottomOf="@+id/register_phone" />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="9dp"
+        android:inputType="text"
+        android:hint="Имя пользователя"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/register_chelovek"
+        app:layout_constraintTop_toBottomOf="@+id/register_email" />
+
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:inputType="textPassword"
+        android:hint="Пароль"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/register_chelovek"
+        app:layout_constraintTop_toBottomOf="@+id/register_name" />
+
+    <ImageView
+        android:id="@+id/register_chelovek2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:padding="7dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_pismo"
+        app:srcCompat="@drawable/user_511584" />
+
+    <EditText
+        android:id="@+id/con_password"
+        android:layout_width="242dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/ubuntu_light"
+        android:inputType="textPassword"
+        android:hint="Подтвердите пароль"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/register_zamochek"
+        app:layout_constraintTop_toBottomOf="@+id/register_password" />
+
+    <Button
+        android:id="@+id/register_btn"
+        android:layout_width="268dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="55dp"
+        android:backgroundTint="@color/pinkk"
+        android:fontFamily="@font/montserrat_bold"
+        android:shadowColor="#000000"
+        android:shadowDx="6"
+        android:shadowDy="6"
+        android:shadowRadius="8"
+        android:text="Создать"
+        android:textColor="#F7E3E3"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/con_password" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_btn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Есть аккаунт?"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/go_to_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:text="Войти"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
